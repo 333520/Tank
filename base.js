@@ -471,10 +471,11 @@ Layer=Class({
 			var col = (this._curFrm % this._iFrCol);
 			var row = (this._curFrm / this._iFrCol) >> 0;
 
-			var left = -col * this.Width;
-			var top = -row * this.Height;
+			var left = -col * this.width;
+			var top = -row * this.height;
 
 			this._sty.backgroundPosition = left + "px " + top + "px";
+
 		}
 	});
 
@@ -495,7 +496,7 @@ Layer=Class({
 			var src = arrSrc[img.tid];
 
 			// 缓存当前图像尺寸数据
-			Loader.ImgCache[src] = {w: this.width, h: this.height};
+			Loader.ImgCache[src] = {w: img.width, h: img.height};
 			
 			++iLoaded;
 
