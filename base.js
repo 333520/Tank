@@ -1,4 +1,21 @@
-﻿/***************************
+﻿/*
+*扩展Array contains方法
+*/
+
+Array.prototype.contains=function(str){
+	 var a=new RegExp("(^|,)" + item.toString() + "(this.|,)").test(this);
+	  return a;
+}
+
+/****************
+*地图
+*****************/
+var RES_DATA='AAAAAAAAAAAAAAeAeAeAeAeAeAAeAeAeAeAeAeAAeAeAeVeAeAeAAeAeAYAYAeAeAAYAYAbAbAYAYAbAbbAYAYAbbAbJAYYAbAbAYYAJAbAbAeeeAbAbAAeAeAeAeAeAeAAeAeAYAYAeAeAAeAeA^bZAeAeAAAAAA`C[AAAAAAAAAAAAAAAAAAAAAAABBAAAVAAAVAAAAAAeAVAAAeAeAeAAeAAAAeeAeVeAAAAeAAAAAVAAABAAeAAVAAeBeVBBAAAeAAVABAAAeeeBBBVAABeAAAAVBeAeAeAeAVeAVAeAeAeVeAAeAeAeeeAeVeAAeAeAeeeAAAAAAeAAA^bZAeAeAAeAeA`C[AeeeADDBBBBAAAAAAAAAAAAAAAAAAeAAAeAAAAABBBeAAAAASSSeBBBAAAAAAAAABBBBAAAeAeee[BBBBeeeYAeA`ABBBBAAeAAAA`AABAAAAVVVAABAAbAbAAAAABBBBe[`e[`YYYBBBBAAAAAeAbbBBBBeAALAAAYYBBBAeeALA^bZABBBAVeeAA`C[AeAAAAAAAAAAAAAAAAABBBBDDABBAAAAAAAABABBAAbeebbAAABBAA`eeeeeebAJJAAeeeeeeee[AAA`YAAAYeeA[AEA`ALALAe[AAAAAeAbbAAe[AEEAAeeeeeeeeAAAA`eeeeeeee[AAAYYeeeeeeYYAAAeebYeeYbeeABBAYYA^bZYYABBVBAAA`C[AABBVCCCCCCCCCCBBBBBAADDDAAAAeeAAAAAAASAbAeAAAJJVAAVAeAAAeAAAAAAeAeeeAeeAEEAEYAAAYAAAAEAAAAAbAEEAEEEAeeeeAAEeAe[AAAAAAAAEAAAAAQLAEEEAEAVAeAQAAAAAbbAAAAAQeeAAAAeYYYebAAAeeYAA^bZAYeAAYAAAA`C[AAAAACCCCCDDAAAAAAAABBBBBAAAAA`A[BBAAAA[QA[AAA`B[`BA[QA[AeA`B[`BAeAAeAVAeBAeBAAA`JAeAYLABBee[AABeBAA`eeAAAA`BBB[AAAAVeeAYBBBY`eeVJJJAbABAbAJJJAeAAeAAAeAAAAAe[AAYAYAA`eBAAYAA^bZAABBBAAbAA`C[AAbBBCCCCCCCBBAAAAAAAAADDAAAAAAAJJAAAAAAVJJJAAAAVAAAAVAAABAJVVAAAVAAABVAAAVAAAAAABVVAAAJVAAVABVVVAVAAAAAQAVVAAAVVAAALAAAVAVVVAAQAAQVAAAVVBAAVAAVAAAAVBAAVVAAJJVAABAAVAAAAAAAA^bZAJASVSSAAA`C[AAAAAAAABBBBCCCCCCAAAAAAAAAeAAeAbAeAAABeeeAeASAe[AABBBAAYAeAYA`[BEEEEEEEEEEAEAeAAAAbbAAAAAAAeAA`eeYeYJJeeAeA`eeBeSSeAAAVASABBBBAAEEAEEEEEAEEEEBBA`AAbbAAAAABBeA[AA`ASbeABSeA[^bZAYAeAAAAAA`C[AbAYACCCCCCCDDBBBBAAAAAAAAAAeAAAAASBAAeAAAAASBQVLAeAAASBQVLAJBAAAAQVLAJBAAAAAAAAJBAAAAAAAAAAABSBABSBAAAVeAQVLAQVLAeVAAABJBABJBAAAAAAASAAASAAAAeAAQVLAQVLAAeeAABJBABJBAAeAAbAA^bZAAbAAAAeeA`C[AeeAAAAAAAABBBBCCCCCCCDDDAAAAAAAAAAAAAA`YeAAAAAAeY[`YAAeABBAeAA`eAAAeBBBBeAA`eAA`eBVVBe[Ae`bbeEEEEEEeeeAeeeVVeVVeee[AAeeVAeAVee[AAAeeeeeeeee[AeBYYYVVYYYYBeeBBBBBBBBBBBeAABBB^bZBBBBAAAA[A`C[AA[AAAAAAAAAAAAAABBCCCCDDAAAAAVAeAeeAAA`eeeeAeAAAAAAAA[AeAeeABBBA`AAAAAVABBBBA`AeeeVeeBBYVAYYYVAAeABBA``eeeAVBBBBBAAAAAVAABBBBBeAVeABBBBVBBBeA`eBBBBBAAAAe[AeBBAAAAJeeeAAABBA^bZAeA`AAbBBA`C[AAAAABBBBBDDDDDDCCCCBBBBBAAAAAAAeeeAAAAeeebAbAAeAAAAAAAeAYAAAAeeAEEEEEAe[AAeJAASSSEAeAVLeAeAeeeEEEAEeeAAAAAVEAAAEJAAEEEAEEeeAEAAAAAAAAeJJAEEEAeeeAAAAAAAAAAAAeAJJAAAeeA`eAAAA^bZAeAAeAAAAA`C[AAAAACCCCCCCCBBBBBBDDDDDDAAAAbAAAbAAAAAeeeeAAAeeeeAAeAAAAeAAAAVAAVAeYAAAYeAeeAeA[BSVSB`AVeAYAABBBBBAAJeeSAABBBBBAAbeeVA[BJVJB`AeAeeAebAAAbeAVAeVAAAAeAAAAeAeeeeeAAAeeeVVeeAAY^bZYAAeAeeAAA`C[AAAAACCCCCCCCBBBBBBBBDDDDAAAAAAAAAAAAABBAAbeeebAABBBAA`eeeee[AABAAAeeBeBeeAAAAAAeBBeBBeAAABAAeeeeeeeAABBBAAeBeBeAABBEEEAeeeeeAEEEAAAA`````AAAAAAAA[[[[[AAAAQQQAAAAAAALLL[[[AA^bZAA```LLLQA`C[ALQQQCCCCCCCCCCBBBBDDDDDDAAAAeeAAeAAAAABBeeAAAeAAAABBBBBBBBeeAAABJeBeeeBBBBeVBBeBBBJBBeLeAABBeSBBBBeAeAAeeeeeBBee[BBQJeeAAAeYAAABAeAeASbYBBe[BAeAA`eYBBeAABAee[`YBBbBeBBAAeAB^bZeBYBAAAYAA`C[ABBBAAABBBBBBBBBBDDDDDDDDAAAAAAAAAAAAAAAVBVAAAAAAAAAAABABSAAAAAAABAAAABbAAAAAABBAABABSAAAAABABABAABbAAAABAABAAABBSAAAABAAAABBBBbAAAABAABABBBBAeAAAAABAABBBVeeAAAAABABBBBVeeAA^bZBABBBVVeeA`C[BAABBAAAAAAAAAAAAAAAABBDDAAAAbAAAAAbAAAeAeeAAGGGeeAAeAAeAVGGGGGAGGGLeAAeGGGGAGGGGGGee`[AAAAAQGGGGe`[AJJeeeeGGGGGGGeeAAAeeGGGGLAAAAeeeAGGGeeAeAGGGeGAAAAeAeAGGGGGJAJAAbeAeGGGG^bZAeAAAeeLAA`C[AeAeADDBBCCCCCCCCAAAAAAAAAAAAAAAAVVVBAAeAAAAAAVAAVAeBeAAAeeeeAVAAeBeAAeABeVVAAAeABVeBAeAAAAAAAVAeVeeAAAAAeeVeAVAAAAAAAeABeVBAAAAAVVVBAeAAeeAAAVAeeeeAAeVVAAVAAVAAAAAVeeABVVVA^bZAAeVVAAAAA`C[AAAVVDDDDAACCCCCCBBBBBBBBAeAeAeAeAeAeAAeAeAeAeAeAeAAJAJAJAJAJAJAbAbAeAAAeAbAbeAeYeAeAeYeAeJAJAVAJAVAJAJBBAAeABAeAABBBBBBeYBYeBBBBBBBBBBBBBBBBBbAbAeBBBeAbAbAeAeAABAAeAeAAeAeA^bZAeAeAAYAYA`C[AYAYABBBDDDDDDDDAAAACCCCCAAAAAAAAAAAAASAAAAASAAAAASAAAAAAAAAAAAA\\YZAAAAAA[AAA[AA\\Z\\Z\\Z[A\\_[X[[[[[[[[Z]YXYAXAXA_WXAXWAAAAAAA^_AAAAAAAAAAA_\\AAAABAAAAAAAAAAABBBAAAAAAAAABBVBBAA^bZAABBVVVBBA`C[ABBVVBBBBBBBBAACCDDDDDDDDAAAbbbAAbAAAAAbeeeeeeeeAAAABBBBBBBBeeAABBAAAAAABBeeABAVAAVAAABBBABAVAAVAAABBBABAABAAAABBee[BBBBBBBBBeee[eBBeeBBBeeeeAAeeeeeeeeeeAVVAeVeeeeee[AVAVeYV^bZeeVVVAAAAA`C[AAAAACCCCCCCCBBAAAAAADDDDAAAAABAAAAAAAAAAABVBAAAAAAAABAABAABBAAAABeBAAABeeBAAAABeBAAABBAABBAABAABAAAABVeBAAABVBAABABVeBAAABAABVBAeBAABAAABABAABAABeBABeBAAAAAABeBAABAABAABAAB^bZAABVBBVBAA`C[ABeBABBBBBBBBAAAAAACCDDDDAAAAAAAAAAAAAAAAAAVVAAAAAAAAAAAAVAAAAAAAVVBBeVeBBVVAAAAVBBVBBVAAABAAAVBBBVAAABVBAAABBBAAABVBAAASJBJSAAABAAAAVASAVAAAAAAAVAAVAAVAAAAAAAAAAAAAAAAAAAAA^bZAAAAAAAVAA`C[AAVAADDDDDDCCCCBBBBBBBBBBAAVAeJAAAA`AAAAeAeBAYeeeAAABBAeB`[AAAVVBBBBBBeeeA`eAAABBbbJeA`eY`eJAbYYAAAeYA``AbeGGGGGGGGG`AYAGGGGGGGGGAAVAGGGGGGGGGeAeAGGGGGGGGG`AeAGGGGGGGGG`AeAA^bZGGGGGAAYAA`C[AGGGGCCCCDDBBBBAAAAAAAAAAAAAVAeAeAeAVAAeAeAAAAAVAAAAeAeAAVAAVAVVAeAAAeAVeAAAVAAAAeeAeeAVAAAAVAeAAeeAeeAVAVAAeAVAAVeAAAeeAeAAAeVAAAVeeAeeAeeAAeAeAAAeVAAAAeeAAAeAeeVAVAAeeAeeA^bZAeVAAeAeAA`C[AeeeACCBBBBBBBBDDDDDDDDDDAAEEAAAAAAAAASAAEBA[AAAAAABSAAAALA[AEEABBAJb`AALBEAABBBAAVb`AAAASBBJSA`AVbAASBBJAAYVA`AJABBAAAAA[YVAABBBAAEBQAA[YSJBBAEEA`AQAAAAABAAAAAA`ABEAAJVAAAA^bZAEEAAVVAAA`C[AAAAVBBBBBBDDDDDDAAAACCCCAAAAVAAAAAAAAVVAAVAAVVAAAAAVAAVAAAVAVVBAVAAVVVABAVAAAeAAAAVAVVVAABVVAVeVeeAAAAAAVBVBAAeAAVVAAVAABAAVAAVAAAeAAVAAVVeVABVVVBBeVVAeVAAAAeAAAABBAeAAAAVA^bZABAeAAAAVA`C[AVAeACCDDDDDDDDBBBBBBBBAAAAAAAAAAAAQLAAAAAAASAAAVAAAAAAAbBbAe[AAAAAASBBBSe[AAAAAbBBGBBe[AAAASBBGGGBB[AAAbBBGGGGGBBbASBBGGGGGGGBBSBBGGGGGGGGGBBABGGGGGGGGGBAABGGGGGGGGGBAABGGG^bZGGGBAABGGA`C[AGGBABBDAAAAAAAAAAAAAAACCAAAAAAAAAAeAAAeEEAVAeAAAAAAAEEeBBBEEAVAAAAAABBBEEeAAAVAAEEABAAAAABBeAEEVAAAAeABBBAAAAAAVAAVAeEEAeAAAAAAAVAEEBBEEBBAeAAAAABAEEBBEEAAAAVBAAABBEEAAAeAe^bZAAAAAeAAAA`C[AeVAACCCCCCCCCCBBBBDDDDDDAAAAAAAAAAAAAAAAAAbbAAASAAASSAbBBSAbBbAbBBbBBBBbBBBbBBBBBBBBBBBBBVBEBBBBBEBBBBBBEEEBBBEEEBVBBBBEBVBBBEBBBBBBBBBBBBBBBBBBBBYYBBBBBJJBBBYAAYBBBJAAJYYA^bZYYYAAAAAAA`C[AAAAAAAAABBBBBBBBCCCCDDDDAAAEAAAAEAAAAEEAEAEEEEAEEEBBeAAeAAEAEBEBEEEEAVAAeBBBBBAEAAEAEEEEBEEAEAEEAAEAAAAAeBeAeBAEAAEAEEBEEEEABeAEeAAeAAEABBEAEEEAEEAEeEEEAAAAeABBAABEAAEAEEEB^bZAEAEEAEAAA`C[AAAAACCCBBBBBBBBDDDDDDCCCGGGGGGGGGGGGGGGGGGGGGGGGGGGGGeGGGGGeGGGGeAeAeGeAeAeGGYYeAAAAAeYYGGGGebeVebeGGGVGGGAJAJAGGGVGGGGAbAbAGGGGGGGGAeAeAGGGGGGGeAAbAAeGGGGeGeAJJJAeGeGAebeA^bZAebeAAYAAA`C[AAAYADDDDDDDDAAAAAACCBBBBAAAAVAAAAVAAAAVAAAVAAVBBAAAAVAAAAVBSLAAAAAVABBBBBAQAALAAVBBVBAAVAAJLBAVBBVAAQAAABBBBBAAVAAAASLBAVBAAAVAAABBBVAVASAAVABBBVAAAAQAAAAAAVAAAAAAAAQVAAAAA^bZASLAALASAA`C[AAAAABBBBDDDDDDDDCCCCBBBBAAAA[`AAAAAAA[[[`A[AA[[AAA[[[eeAAA[e[AA``Ae[AA`[eeAAA[Ae`[A[eeeAAA[`AAe[e``eAAA[AA`ee[A[eAAA`AA[ee[A[eAAA`YYAeeeA[[YeA`AA`[e`[[[``AA[Ae`[eeAA`AAA[`[^bZe[A[AAA[`A`C[AeeAACCCCBBBBBBBBBBDDDDDDABAAAAAAAAABABAAABABABBAABJA`A\\_A[`A\\_JAA`AcdA[`AcdAA_\\A[`V_\\A[`AEABAABABAABAEA]W]W]W[`a`AAAY[[A[A[`Y`YAAYWYWWAWXAXYAAAAGAAAAAGAAAAAGBGAAAGBGAeBAAGA^bZAGAeeVBAAA`C[AAeeVDCBCACCCCDDBBBBBBDDD';
+
+
+
+
+/***************************
 *Class方法，模拟类的实现  
 *************************/
 var Class=function(base,ext){            //存在ext的话base则为基类,ext继承base
@@ -7,12 +24,12 @@ var Class=function(base,ext){            //存在ext的话base则为基类,ext�
        obj=ext;
 	   proto=new base;  
 	   proto[base.className]=proto.constructor;
-
    }else{
       obj=base;
    }
    var stat=obj.static||{},
    func=obj.constructor;
+
    for(var i in obj){
        proto[i]=obj[i];
    }
@@ -43,7 +60,10 @@ var InputAction =
 	DOWN:	83,		//S
 	LEFT:	65,		//A
 	RIGHT:	68,		//D
-
+    AUP:    38,     //箭头上
+	ADOWN:  40,     //箭头下
+	ALEFT:  37,     //箭头左
+	ARIGHT:  39,    //箭头右
 	GAME_A:	73,		//I
 	GAME_B:	79,		//O
 	GAME_C:	75,		//K
@@ -156,6 +176,7 @@ Layer=Class({
  *******************************************************/
 	Lable = Class(Layer,
 	{
+	    static:{className:"Lable"},
 		constructor: function(text)
 		{
 			this.Layer();
@@ -163,7 +184,7 @@ Layer=Class({
 			this._sty.font = "22px 'Arial Black'";
 
 			if(typeof text == "string")
-				this.SetText(text);
+				this.setText(text);
 		},
 
 		setColor: function(color)
@@ -219,7 +240,7 @@ Layer=Class({
 		_rectColl: null,
 
 
-
+		static:{className:"Sprite"},
 
 		constructor: function(image, frameWidth, frameHeight)
 		{
@@ -401,7 +422,7 @@ Layer=Class({
 		 **************************************************/
 		collidesWith: function(s)
 		{
-			if(!s.Visible)
+			if(!s.visible)
 				return;
 
 			var x1, y1, w1, h1;
@@ -413,17 +434,17 @@ Layer=Class({
 			var r = this._rectColl;
 			if(r)
 			{
-				x1 = this.X + r.X;
-				y1 = this.Y + r.Y;
-				w1 = r.Width;
-				h1 = r.Height;
+				x1 = this.x + r.x;
+				y1 = this.y + r.y;
+				w1 = r.width;
+				h1 = r.height;
 			}
 			else
 			{
-				x1 = this.X;
-				y1 = this.Y;
-				w1 = this.Width;
-				h1 = this.Height;
+				x1 = this.x;
+				y1 = this.y;
+				w1 = this.width;
+				h1 = this.height;
 			}
 
 			/*
@@ -432,17 +453,17 @@ Layer=Class({
 			r = s._rectColl;
 			if(r)
 			{
-				x2 = s.X + r.X;
-				y2 = s.Y + r.Y;
-				w2 = r.Width;
-				h2 = r.Height;
+				x2 = s.x + r.x;
+				y2 = s.y+ r.y;
+				w2 = r.width;
+				h2 = r.height;
 			}
 			else
 			{
-				x2 = s.X;
-				y2 = s.Y;
-				w2 = s.Width;
-				h2 = s.Height;
+				x2 = s.x;
+				y2 = s.y;
+				w2 = s.width;
+				h2 = s.height;
 			}
 
 			return (x1 - w2 < x2 && x2 < x1 + w1) && (y1 - h2 < y2 && y2 < y1 + h1);
@@ -556,6 +577,288 @@ Layer=Class({
 
 	Loader.ImgCache = {};
 
+/*******************************************************
+ * Class TiledLayer
+ *******************************************************/
+TiledLayer = Class(Layer,
+{   
+	static:{className:"TileLayer"},
+	_arrTile: null,
+	_arrAniTile: null,
+
+	_iColNum: null,
+	_iRowNum: null,
+	
+	_iTileW: null,
+	_iTileH: null,
+
+
+
+	constructor: function(columns, rows, image, tileWidth, tileHeight)
+	{
+		this.Layer();
+
+
+		this._arrTile = [];
+		this._arrAniTile = [];
+
+		this._iColNum = columns;
+		this._iRowNum = rows;
+
+		var oFrag = doc.createDocumentFragment();
+
+		/*
+		 * 创建砖块数据
+		 */
+		var c, r, T;
+
+		for(r = 0; r < rows; r++)
+		{
+			T = this._arrTile[r] = [];
+
+			for(c = 0; c < columns; ++c)
+			{
+				var oDIV = doc.createElement("div");
+				var oSty = oDIV.style;
+
+				oSty.position = "absolute";
+				oSty.backgroundRepeat = "no-repeat";
+
+				oFrag.appendChild(oDIV);
+
+				T[c] =
+				{
+					id: 0,				// 砖块ID（动态砖为负数）
+					staticID: 0,		// 静态ID（实际显示的序列）
+					sty: oSty
+				};
+			}
+		}
+
+		this._div.appendChild(oFrag);
+		this.SetStaticTileSet(image, tileWidth, tileHeight);
+	},
+
+
+	/**************************************************
+	 * CreateAniTile
+	 *   创建一个动态砖块，并返回砖块ID
+	 *   staticTileIndex:
+	 *     必须为0，或者存在的静态砖块ID
+	 * 返回值从-1开始逐次递减。
+	 **************************************************/
+	CreateAniTile: function(staticTileIndex)
+	{
+		if(staticTileIndex < 0 || staticTileIndex > this._iFrNum)
+			throw Error("Invalid tile index");
+
+		var aniTile = this._arrAniTile;
+		var n = aniTile.length;
+
+		aniTile[n] =
+		{
+			id: staticTileIndex,
+			ref: {}
+		};
+
+		return ~n;
+	},
+
+	/**************************************************
+	 * SetAniTile
+	 *   批量设置动态砖块图像序列
+	 **************************************************/
+	SetAniTile: function(aniTileIndex, staticTileIndex)
+	{
+		var aniTileInfo = this._arrAniTile[~aniTileIndex];
+		if(!aniTileInfo)
+			throw Error("Invalid animated tile index");
+
+
+		if(aniTileInfo.id == staticTileIndex)
+			return;
+		aniTileInfo.id = staticTileIndex;
+
+
+		// 
+		// 枚举并修改设置了此砖块的格子
+		// p = row * 1e5 + col
+		//
+		var p, col, row;
+
+		for(p in aniTileInfo.ref)
+		{
+			if(p > 0)
+			{
+				col = (p % 1e5);
+				row = (p / 1e5) >> 0;
+
+				this._arrTile[row][col].staticID = staticTileIndex;
+				this._DrawTileImg(col, row);
+			}
+		}
+	},
+
+
+	/**************************************************
+	 * GetAniTile
+	 *   返回动态砖块当前对应的图像序列
+	 **************************************************/
+	GetAniTile: function(aniTileIndex)
+	{
+		var aniTileInfo = this._arrAniTile[~aniTileIndex];
+		if(!aniTileInfo)
+			throw Error("Invalid animated tile index");
+
+		return aniTileInfo.id;
+	},
+
+
+	/**************************************************
+	 * FillCells
+	 *   填充指定范围内的砖格
+	 **************************************************/
+	FillCells: function(col, row, numCols, numRows, tileIndex)
+	{
+		var r, r2 = row + numRows;
+		var c, c2 = col + numCols;
+
+		for(r = row; r < r2; ++r)
+			for(c = col; c < c2; ++c)
+				this.SetCell(c, r, tileIndex);
+	},
+
+
+	/**************************************************
+	 * GetCell
+	 *   返回指定砖格的砖块序列
+	 **************************************************/
+	GetCell: function(col, row)
+	{
+		return this._arrTile[row][col].id;
+	},
+
+
+	/**************************************************
+	 * SetCell
+	 *   设置指定砖格的图片序列
+	 **************************************************/
+	SetCell: function(col, row, tileIndex)
+	{
+		var tile = this._arrTile[row][col];
+		var staticID = tileIndex;
+
+		/*
+		 * 之前是动态砖，取消此引用
+		 */
+		if(tile.id < 0)
+			delete this._arrAniTile[~tile.id].ref[row*1e5 + col];
+
+		/*
+		 * 当前是动态砖，添加引用
+		 */
+		if(tileIndex < 0)
+		{
+			var aniTileInfo = this._arrAniTile[~tileIndex];
+
+			aniTileInfo.ref[row*1e5 + col] = true;
+			staticID = aniTileInfo.id;
+		}
+
+		tile.id = tileIndex;
+		tile.staticID = staticID;
+
+		this._DrawTileImg(col, row);
+	},
+
+
+	/**************************************************
+	 * SetStaticTileSet
+	 *   指定砖块层源图像
+	 **************************************************/
+	SetStaticTileSet: function(image, tileWidth, tileHeight)
+	{
+		var size = Loader.ImgCache[image];
+		if(!size)
+			throw Error("Image " + image + "not loaded");
+
+
+		this._iImgW = size.w;
+		this._iImgH = size.h;
+
+
+		//
+		// 检验尺寸是否合法
+		//
+		if(tileWidth < 1 || tileHeight < 1)
+			throw Error("Invalid argument");
+
+
+		if(this._iImgW % tileWidth || this._iImgH % tileHeight)
+		{
+			throw Error("Image: " + image +
+							" (" + this._iImgW + "*" + this._iImgH + ") size must be an integral multiple of (" +
+							tileWidth + "*" + tileHeight + ")");
+		}
+
+		//
+		// 计算帧的纵横个数
+		//
+		this._iFrCol = this._iImgW / tileWidth;
+		this._iFrNum = this._iFrCol * (this._iImgH / tileHeight);
+
+
+		this.setSize(this._iColNum * tileWidth, this._iRowNum * tileHeight);
+
+
+		//
+		// 创建地砖元素
+		//
+		var r, c, T;
+
+		for(r = 0; r < this._iRowNum; ++r)
+		{
+			T = this._arrTile[r];
+
+			for(c = 0; c < this._iColNum; ++c)
+			{
+				//
+				// 更新砖块图片
+				//
+				var sty = T[c].sty;
+
+				sty.backgroundImage = "url(" + image + ")";
+				sty.backgroundPosition = "0 -9999px";
+
+				sty.left = c * tileWidth + "px";
+				sty.top = r * tileHeight + "px";
+				sty.width = tileWidth + "px";
+				sty.height = tileHeight + "px";
+			}
+		}
+
+		this._iTileW = tileWidth;
+		this._iTileH = tileHeight;
+	},
+
+
+	/**
+	 * 更新砖块层图片
+	 */
+	_DrawTileImg: function(col, row)
+	{
+		var tile = this._arrTile[row][col];
+		var id = tile.staticID - 1;
+
+		var c = (id % this._iFrCol);
+		var r = (id / this._iFrCol) >> 0;
+		var left = -c * this._iTileW;
+		var top = -r * this._iTileH;
+
+		tile.sty.backgroundPosition = left + "px " + top + "px";
+	}
+});	
+	
 
 
 /*******************************************************
@@ -573,14 +876,15 @@ Layer=Class({
 			arrRepeat[i] = 1;
 			arrQuery[i] = -1e8;
 
-			//
-			// 默认按键延时
-			//
-			arrRepeat[InputAction.START] =
-			arrRepeat[InputAction.SELECT] =
-			arrRepeat[InputAction.GAME_C] =
-			arrRepeat[InputAction.GAME_D] = InputAction.NO_REPEAT;
 		}
+		
+		//
+		// 默认按键延时
+		//
+		arrRepeat[InputAction.START] =
+		arrRepeat[InputAction.SELECT] =
+		arrRepeat[InputAction.GAME_C] =
+		arrRepeat[InputAction.GAME_D] = InputAction.NO_REPEAT;
 
 		function handleKeyDown(e)
 		{
@@ -722,7 +1026,7 @@ function Timer(lisn, time)
 
 	this.Start = function()
 	{
-		tid = setInterval(Update, 1);
+		tid = setInterval(Update, 13);
 	};
 
 	this.Stop = function()
